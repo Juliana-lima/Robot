@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20210916 19:06:57.776" rpa="false" schemaversion="2">
+<suite id="s1" name="TestSitePractice" source="D:\Estudo_Robot\tests\TestSitePractice.robot">
+<test id="s1-t1" name="Caso de Teste 01: Pesquisar produto existente">
+<kw name="Abrir navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://automationpractice.com</arg>
+<arg>googlechrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210916 19:06:58.074" level="INFO">Opening browser 'googlechrome' to base url 'http://automationpractice.com'.</msg>
+<status status="PASS" starttime="20210916 19:06:58.074" endtime="20210916 19:07:03.558"/>
+</kw>
+<status status="PASS" starttime="20210916 19:06:58.074" endtime="20210916 19:07:03.559"/>
+</kw>
+<kw name="Acessar a página home do site" library="Resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>My Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210916 19:07:03.571" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20210916 19:07:03.562" endtime="20210916 19:07:03.571"/>
+</kw>
+<status status="PASS" starttime="20210916 19:07:03.561" endtime="20210916 19:07:03.571"/>
+</kw>
+<kw name="Conferir se a página home foi exibida">
+<msg timestamp="20210916 19:07:03.578" level="FAIL">No keyword with name 'Conferir se a página home foi exibida' found.</msg>
+<status status="FAIL" starttime="20210916 19:07:03.578" endtime="20210916 19:07:03.578"/>
+</kw>
+<kw name="Digitar o nome do produto &quot;Blouse&quot; no campo de pesquisa">
+<status status="NOT RUN" starttime="20210916 19:07:03.582" endtime="20210916 19:07:03.582"/>
+</kw>
+<kw name="Clicar no botão &quot;pesquisar&quot;">
+<status status="NOT RUN" starttime="20210916 19:07:03.585" endtime="20210916 19:07:03.585"/>
+</kw>
+<kw name="Conferir se o produto &quot;Blouse&quot; foi listado no site">
+<status status="NOT RUN" starttime="20210916 19:07:03.589" endtime="20210916 19:07:03.589"/>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210916 19:07:03.590" endtime="20210916 19:07:05.756"/>
+</kw>
+<status status="PASS" starttime="20210916 19:07:03.590" endtime="20210916 19:07:05.756"/>
+</kw>
+<status status="FAIL" starttime="20210916 19:06:58.074" endtime="20210916 19:07:05.756">No keyword with name 'Conferir se a página home foi exibida' found.</status>
+</test>
+<test id="s1-t2" name="Caso de Teste 02: Pesquisar produto não existente">
+<kw name="Abrir navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://automationpractice.com</arg>
+<arg>googlechrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210916 19:07:05.756" level="INFO">Opening browser 'googlechrome' to base url 'http://automationpractice.com'.</msg>
+<status status="PASS" starttime="20210916 19:07:05.756" endtime="20210916 19:07:10.858"/>
+</kw>
+<status status="PASS" starttime="20210916 19:07:05.756" endtime="20210916 19:07:10.858"/>
+</kw>
+<kw name="Acessar a página home do site" library="Resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>My Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210916 19:07:10.865" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20210916 19:07:10.860" endtime="20210916 19:07:10.865"/>
+</kw>
+<status status="PASS" starttime="20210916 19:07:10.859" endtime="20210916 19:07:10.865"/>
+</kw>
+<kw name="Conferir se a página home foi exibida">
+<msg timestamp="20210916 19:07:10.871" level="FAIL">No keyword with name 'Conferir se a página home foi exibida' found.</msg>
+<status status="FAIL" starttime="20210916 19:07:10.871" endtime="20210916 19:07:10.871"/>
+</kw>
+<kw name="Digitar o nome do produto &quot;produtoNãoExistente&quot; no campo de pesquisa">
+<status status="NOT RUN" starttime="20210916 19:07:10.873" endtime="20210916 19:07:10.873"/>
+</kw>
+<kw name="Clicar no botão &quot;pesquisar&quot;">
+<status status="NOT RUN" starttime="20210916 19:07:10.876" endtime="20210916 19:07:10.876"/>
+</kw>
+<kw name="Conferir se a mensagem &quot;No results were found for your search &quot;produtoNãoExistente&quot;&quot;">
+<status status="NOT RUN" starttime="20210916 19:07:10.879" endtime="20210916 19:07:10.879"/>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210916 19:07:10.880" endtime="20210916 19:07:13.013"/>
+</kw>
+<status status="PASS" starttime="20210916 19:07:10.879" endtime="20210916 19:07:13.013"/>
+</kw>
+<status status="FAIL" starttime="20210916 19:07:05.756" endtime="20210916 19:07:13.013">No keyword with name 'Conferir se a página home foi exibida' found.</status>
+</test>
+<status status="FAIL" starttime="20210916 19:06:57.776" endtime="20210916 19:07:13.013"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="TestSitePractice">TestSitePractice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
